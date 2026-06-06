@@ -1,0 +1,113 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e91e63"/>
+      <stop offset="100%" style="stop-color:#ff6f00"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00bcd4"/>
+      <stop offset="100%" style="stop-color:#3f51b5"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4caf50"/>
+      <stop offset="100%" style="stop-color:#009688"/>
+    </linearGradient>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9c27b0"/>
+      <stop offset="100%" style="stop-color:#e040fb"/>
+    </linearGradient>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9800"/>
+      <stop offset="100%" style="stop-color:#ff5722"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="420" rx="12" fill="url(#bg2)"/>
+  <!-- Title -->
+  <text x="500" y="38" fill="#ffffff" font-size="20" font-family="'Segoe UI',Arial,sans-serif" font-weight="700" text-anchor="middle">How DeepSeek Vision Bridge Works</text>
+  <line x1="350" y1="48" x2="650" y2="48" stroke="url(#g2)" stroke-width="2"/>
+
+  <!-- Step 1: User sends image path -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="75" width="150" height="65" rx="10" fill="#1e1e3a" stroke="url(#g1)" stroke-width="1.5"/>
+    <text x="115" y="100" fill="#ff8a80" font-size="22" font-family="monospace" text-anchor="middle">🖼️</text>
+    <text x="115" y="128" fill="#ddd" font-size="12" font-family="'Segoe UI',Arial" text-anchor="middle">User sends image path</text>
+  </g>
+  <!-- Arrow 1→2 -->
+  <line x1="190" y1="107" x2="260" y2="107" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <polygon points="260,101 275,107 260,113" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Step 2: Codex detects -->
+  <g filter="url(#shadow)">
+    <rect x="280" y="75" width="150" height="65" rx="10" fill="#1e1e3a" stroke="url(#g2)" stroke-width="1.5"/>
+    <text x="355" y="100" fill="#80d8ff" font-size="22" font-family="monospace" text-anchor="middle">🔍</text>
+    <text x="355" y="128" fill="#ddd" font-size="12" font-family="'Segoe UI',Arial" text-anchor="middle">Codex detects关键词/扩展名</text>
+  </g>
+  <!-- Arrow 2→3 -->
+  <line x1="430" y1="107" x2="500" y2="107" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <polygon points="500,101 515,107 500,113" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Step 3: Vision Bridge -->
+  <g filter="url(#shadow)">
+    <rect x="520" y="75" width="150" height="65" rx="10" fill="#1e1e3a" stroke="url(#g3)" stroke-width="1.5"/>
+    <text x="595" y="100" fill="#b9f6ca" font-size="22" font-family="monospace" text-anchor="middle">🌉</text>
+    <text x="595" y="128" fill="#ddd" font-size="12" font-family="'Segoe UI',Arial" text-anchor="middle">Vision Bridge 调用</text>
+  </g>
+  <!-- Arrow 3→4 -->
+  <line x1="670" y1="107" x2="740" y2="107" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <polygon points="740,101 755,107 740,113" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Step 4: Vision API -->
+  <g filter="url(#shadow)">
+    <rect x="760" y="75" width="180" height="65" rx="10" fill="#1e1e3a" stroke="url(#g4)" stroke-width="1.5"/>
+    <text x="850" y="100" fill="#ea80fc" font-size="22" font-family="monospace" text-anchor="middle">🧠</text>
+    <text x="850" y="128" fill="#ddd" font-size="12" font-family="'Segoe UI',Arial" text-anchor="middle">Vision API(gpt-4o / qwen-vl-max)</text>
+  </g>
+
+  <!-- Down arrow 4→5 -->
+  <line x1="850" y1="140" x2="850" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <polygon points="844,210 850,225 856,210" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Step 5: Text Description -->
+  <g filter="url(#shadow)">
+    <rect x="760" y="230" width="180" height="65" rx="10" fill="#1e1e3a" stroke="url(#g3)" stroke-width="1.5"/>
+    <text x="850" y="255" fill="#b9f6ca" font-size="22" font-family="monospace" text-anchor="middle">📝</text>
+    <text x="850" y="283" fill="#ddd" font-size="12" font-family="'Segoe UI',Arial" text-anchor="middle">Exhaustive text description</text>
+  </g>
+
+  <!-- Down arrow 5→6 -->
+  <line x1="850" y1="295" x2="850" y2="340" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <polygon points="844,340 850,355 856,340" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Step 6: Only text to DeepSeek -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="290" width="200" height="48" rx="24" fill="#ff6f00" opacity="0.85"/>
+    <text x="850" y="320" fill="#fff" font-size="14" font-family="'Segoe UI',Arial,sans-serif" font-weight="bold" text-anchor="middle">⛔ No image_url block!</text>
+  </g>
+
+  <!-- Left side: Trigger details -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="190" width="430" height="180" rx="12" fill="#1e1e3a" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="60" y="215" fill="#ffd54f" font-size="14" font-family="'Segoe UI',Arial,sans-serif" font-weight="bold">⚠️ 图片上传唯一正确方式</text>
+    <text x="60" y="238" fill="#ef9a9a" font-size="12" font-family="monospace">✅ 在聊天框中粘贴文件绝对路径</text>
+    <text x="73" y="255" fill="rgba(255,255,255,0.4)" font-size="11" font-family="monospace">C:\Users\xxx\Desktop\screenshot.png</text>
+    <text x="60" y="276" fill="#ef9a9a" font-size="12" font-family="monospace">❌ 禁止拖拽/粘贴图片到聊天框</text>
+    <text x="60" y="297" fill="rgba(255,255,255,0.4)" font-size="11" font-family="monospace">→ DeepSeek 报错，对话崩溃不可恢复</text>
+    <text x="60" y="320" fill="#81d4fa" font-size="12" font-family="'Segoe UI',Arial,sans-serif">触发关键词: 图片/截图/photo/screenshot/img 等 20+</text>
+    <text x="60" y="340" fill="#a5d6a7" font-size="12" font-family="'Segoe UI',Arial,sans-serif">扩展名触发: .png .jpg .jpeg .gif .webp .bmp .tiff .svg</text>
+    <line x1="60" y1="360" x2="450" y2="360" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <text x="60" y="358" fill="rgba(255,255,255,0.3)" font-size="11" font-family="'Segoe UI',Arial,sans-serif">🛡️ 防御模式：Codex 自动拦截图片 → Vision Bridge → 纯文本回复</text>
+  </g>
+
+  <!-- Right side: Return arrow -->
+  <line x1="850" y1="365" x2="850" y2="390" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="850" y1="390" x2="200" y2="390" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="200,384 185,390 200,396" fill="rgba(255,255,255,0.2)"/>
+  <text x="520" y="405" fill="rgba(255,255,255,0.3)" font-size="11" font-family="'Segoe UI',Arial,sans-serif" text-anchor="middle">DeepSeek receives only text — normal reply  ✅</text>
+</svg>
